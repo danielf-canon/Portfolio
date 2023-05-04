@@ -19,13 +19,13 @@
 
 *[Portfolio]* 
 
-## 🛠 Built With <a name="Daniel Felipe Cañón"></a>
+**[Portfolio]** is my first portfolio project.
 
-### Tech Stack <a name="HTML&CSS"></a>
+## 🛠 Built With <a name="built-with"></a>
 
-HTML, CSS, linters and git.
+### Tech Stack <a name="tech-stack"></a>
 
-### Key Features <a name="create nice and well design portfolio "></a>
+> Github, Git, CSS, HTML, Linters, Nodejs.
 
 - *[Portfolio ]*
 
