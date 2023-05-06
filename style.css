@@ -265,3 +265,9 @@ section .skills .skill .placeholder li {
     width: 1170px;
   }
 }
+
+.form {
+  display: grid;
+  place-content: center;
+  gap: 15px;
+}
