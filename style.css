@@ -23,7 +23,9 @@ body {
   padding-right: 1rem;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 95px;
+  padding-bottom: 8%;
+  padding-top: 4%;
+  margin-bottom: 10%;
 }
 
 nav {
@@ -269,5 +271,35 @@ section .skills .skill .placeholder li {
 .form {
   display: grid;
   place-content: center;
-  gap: 15px;
+  gap: 2%;
+}
+
+#contact-form form ul {
+  display: grid;
+  margin: 0%;
+  gap: 0%;
+}
+
+#contact-form form ul li {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  /* or 160% */
+  color: #6B778C;
+}
+
+input {
+  display: block;
+  font-family: "Inter", sans-serif;
+  border: hsl(0, 0%, 100%);
+  box-sizing: content-box;
+}
+
+textarea {
+  display: block;
+  border: #d0d9d4;
+  border-radius: 8px;
+
 }
