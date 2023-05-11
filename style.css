@@ -38,10 +38,11 @@ nav {
   justify-content: center;
   text-align: center;
   color: #172b4d;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
-  line-height: 52px;
-  margin: 15px;
+  line-height: 3.25rem;
+  margin: 0.938rem;
+  padding: 3%;
 }
 
 #first-title {
@@ -49,11 +50,11 @@ nav {
   justify-content: center;
   text-align: center;
   color: #172b4d;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
-  line-height: 52px;
-  margin: 10px;
-  margin-top: 20px;
+  line-height: 3.25rem;
+  margin: 0.938rem;
+  padding: 0.5rem;
 }
 
 #presentation-title {
@@ -61,11 +62,11 @@ nav {
   justify-content: center;
   align-content: center;
   color: #36b37e;
-  font-size: 40px;
+  font-size: 2.5rem;
   font-weight: 700;
-  line-height: 52px;
+  line-height: 3.25rem;
+  margin: 0.938rem;
   padding: 0%;
-  margin: 0%;
 }
 
 p {
@@ -74,43 +75,43 @@ p {
   text-align: center;
   color: #172b4d;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  margin: 20px;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  margin: 1.25rem;
 }
 
 .logos {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 15px;
-  margin-bottom: 50px;
+  gap: 0.938rem;
+  margin-bottom: 3.125rem;
 }
 
 h3 {
   display: flex;
   justify-content: center;
   text-align: center;
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 600;
   color: #344563;
 }
 
 .indicator {
   margin: auto auto;
-  margin-top: 15px;
-  margin-bottom: 62px;
-  width: 48px;
-  height: 4px;
+  margin-top: 0.938rem;
+  margin-bottom: 3.875rem;
+  width: 3rem;
+  height: 0.25rem;
   background-color: #36b37e;
-  border-radius: 24px;
+  border-radius: 1.25rem;
 }
 
 .works {
   display: grid;
   place-content: center;
   text-align: center;
-  gap: 62px;
+  gap: 3.875rem;
 }
 
 .project {
@@ -162,14 +163,14 @@ li {
   justify-content: center;
   align-self: center;
   text-align: center;
-  margin: 12px;
+  margin: 3%;
   font-size: 17px;
   font-weight: 500;
   background-color: #36b37f;
   color: hsl(0, 0%, 100%);
   border-radius: 4px;
   border: 4px;
-  padding: 12px;
+  padding: 4%;
 }
 
 #about-me {
@@ -269,15 +270,17 @@ section .skills .skill .placeholder li {
 }
 
 .form {
-  display: grid;
-  place-content: center;
-  gap: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0%;
+  gap: 24px;
+  width: 327px;
+  height: 330px;
 }
 
 #contact-form form ul {
-  display: grid;
-  margin: 0%;
-  gap: 0%;
+  width: 3rem;
 }
 
 textarea {
@@ -292,6 +295,7 @@ textarea {
   border: 1px solid #d0d9d4;
   border-radius: 4px;
   padding: 4%;
+  box-sizing: border-box;
 }
 
 input {
@@ -306,6 +310,7 @@ input {
   border-radius: 4px;
   padding: 4%;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .button:active {
@@ -317,4 +322,8 @@ input {
   background: #36b37f;
   box-shadow: 1px 8px 16px rgba(54, 179, 127, 0.24);
   border-radius: 4px;
+}
+
+#button-form {
+  grid-area: auto;
 }
