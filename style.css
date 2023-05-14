@@ -93,6 +93,14 @@ p {
   margin-bottom: 3.125rem;
 }
 
+.logos a img {
+  transition: all 0.5 ease-in;
+}
+
+.logos a img:hover {
+  transform: scale(1.2);
+}
+
 h3 {
   display: flex;
   justify-content: center;
