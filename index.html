@@ -20,7 +20,7 @@
   </header>
 
   <main>
-    <section class="heading">
+    <section class="heading" id="heading">
       <div class= "container">
         <div>
           <h1 id="first-title">Hey there. I'm Daniel.</h1>
@@ -41,7 +41,7 @@
             <img src="images/Linkedin icon.jpg" alt="linkedin" class="logo">
           </a>
           <a href="https://medium.com/" >
-            <img src="images/medium.jpg" alt="" class="logo">
+            <img src="images/medium.jpg" alt="medium" class="logo">
           </a>       
           <a href="https://github.com/">
             <img src="images/github.jpg" alt="github" class="logo">
@@ -139,7 +139,7 @@
         <article class="skill">
           <div class="placeholder"> 
             <div class="circle">
-              <img src="images/Languages.jpg" alt="" class="icon">
+              <img src="images/Languages.jpg" alt="Languages-icon" class="icon">
             </div> 
             <h3>languages</h3>
             <ul>
@@ -153,7 +153,7 @@
         <article class="skill">
           <div class="placeholder">
             <div class="circle">
-              <img src="images/Frameworks.jpg" alt="" class="icon">
+              <img src="images/Frameworks.jpg" alt="Frameworks-icon" class="icon">
             </div>
             <h3>Frameworks</h3>
             <ul>
@@ -170,7 +170,7 @@
         <article class="skill">
           <div class="placeholder">
             <div class="circle">
-              <img src="images/Skills.jpg" alt="" class="icon">
+              <img src="images/Skills.jpg" alt="Skills-icon" class="icon">
             </div>
             <h3>Skills</h3>
             <ul>
@@ -187,16 +187,18 @@
       </div>
     </section>
 
-    <section class="container">
+    <section class="container" id="contact-form">
       <h2 class="titlesClass">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
 
-      <form action="#" class="form">
-        <input type="text" placeholder="Full name">
-        <input type="email" placeholder="Email address">
-        <input type="text" placeholder="Hey I'd like to connect to...">
-        <button class="button">Get in touch</button>
+      <form action="https://formspree.io/f/xyyavypr" class="form" method="post">
+            <input type="text" id="name" placeholder="Full name" maxlength="30" required>
+            <input type="email" id="mail" placeholder="Email address" required>
+            <textarea name="user_message" id="msg" placeholder="Hey I'd like to connect to..." maxlength="500" required></textarea>
+        <button class="button" id = "button-form"type="submit">Get in touch</button>
       </form>
+
       <p>danielfelipecs8@gmail.com</p>
+
       <div class="logos">
         <a href="https://twitter.com/">
           <img src="images/twitter.jpg" alt="twitter" class="logo">
