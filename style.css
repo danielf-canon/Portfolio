@@ -8,6 +8,36 @@ body {
   text-align: center;
 }
 
+.fadeInAnimation {
+  opacity: 1;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+}
+
+.delay3 {
+  animation-duration: 3s;
+}
+
+.delay5 {
+  animation-duration: 5s;
+}
+
+.delay7 {
+  animation-duration: 7s;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  /* stylelint-disable-next-line rule-empty-line-before */
+  100% {
+    opacity: 1;
+  }
+}
+
 .heading {
   background-image: url(images/header-illsutration-mobile@2x.png);
   background-repeat: no-repeat;
@@ -85,12 +115,28 @@ p {
   margin: 1.25rem;
 }
 
+.skill img {
+  transition: all 0.5s ease-in-out;
+}
+
 .logos {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.938rem;
   margin-bottom: 3.125rem;
+}
+
+.logos a img {
+  transition: all 0.5 ease-in;
+}
+
+.skill:hover img {
+  transform: rotate(360deg);
+}
+
+.logos a img:hover {
+  transform: scale(1.2);
 }
 
 h3 {
@@ -147,7 +193,7 @@ ul {
   text-align: center;
   align-self: center;
   align-content: center;
-  font-size: 1rem;
+  font-size: 0.75rem;
   gap: 15px;
   list-style-type: none;
   padding: 0%;
@@ -175,6 +221,7 @@ li {
   border-radius: 4px;
   border: 4px;
   padding: 4%;
+  transition-duration: 0.4s ease;
 }
 
 #about {
@@ -308,9 +355,20 @@ input {
   box-sizing: border-box;
 }
 
+input::placeholder,
+textarea::placeholder {
+  transition: all 0.5s ease-out;
+}
+
+input:hover::placeholder,
+textarea:hover::placeholder {
+  transform: translateX(20px);
+}
+
 .button:active {
   background: #008552;
   color: #fff;
+  transform: scale(0.96);
 }
 
 .button:hover {
@@ -359,6 +417,7 @@ input {
     text-decoration: none;
     color: #172b4d;
     font-weight: 600;
+    transition-duration: 0.4s ease;
   }
 
   #mobile-navbar {
