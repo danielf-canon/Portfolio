@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 const hamburger = document.querySelector('.burgerButton');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -23,6 +24,7 @@ const projects = [
     image: 'images/Snapshoot Portfolio.jpg',
     titlePopup: 'Keeping track of hundreds of components',
     languagesPopup: ['HTML', 'CSS', 'Javascript'],
+    // eslint-disable-next-line max-len
     description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s.",
     liveLink: 'https://www.example.com/',
     sourceLink: '',
