@@ -53,8 +53,7 @@ body {
 .container {
   display: flex;
   flex-flow: column;
-  padding-left: 0.938rem;
-  padding-right: 0.938rem;
+  padding: 1.5rem;
   margin-left: auto;
   margin-right: auto;
 }
@@ -75,7 +74,7 @@ a {
 }
 
 .burgerButton.active .bar:nth-child(1) {
-  transform: translate(0, 10px) rotate(-45deg);
+  transform: translate(0, 9px) rotate(-45deg);
 }
 
 .burgerButton.active .bar:nth-child(2) {
@@ -83,7 +82,7 @@ a {
 }
 
 .burgerButton.active .bar:nth-child(3) {
-  transform: translate(0, -9px) rotate(45deg);
+  transform: translate(0, -7px) rotate(45deg);
 }
 
 #mobile-navbar {
@@ -91,7 +90,7 @@ a {
   flex-flow: column;
   align-items: end;
   padding: 0.5rem;
-  gap: 0.4rem;
+  gap: 0.3rem;
 }
 
 @media (max-width: 768px) {
@@ -134,7 +133,7 @@ a {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 3.25rem;
-  margin: 0.938rem;
+  margin: 0.2rem;
   padding: 3%;
 }
 
@@ -146,7 +145,9 @@ a {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 3.25rem;
-  margin: 0.938rem;
+  margin: 0.2rem;
+  margin-right: 3rem;
+  margin-left: 3rem;
 }
 
 #presentation-title {
@@ -157,7 +158,7 @@ a {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 3.25rem;
-  margin: 0.938rem;
+  margin: 0.2rem;
   padding: 0%;
 }
 
