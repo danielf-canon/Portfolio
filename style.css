@@ -560,10 +560,11 @@ textarea:hover::placeholder {
     background-image: none;
     gap: 2rem;
     padding: 5%;
+    padding-left: 15%;
   }
 
   #background-about {
-    width: 115%;
+    width: 100%;
     margin: 5rem;
     padding-left: 0%;
     padding-right: 0%;
@@ -685,5 +686,23 @@ textarea:hover::placeholder {
 
   .dekstop {
     display: inline;
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .works {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 75%;
+    margin: auto;
+    margin-top: -5rem;
+    justify-content: space-around;
+  }
+
+  #contact-form-title {
+    padding: 0%;
+    margin: 0%;
+    font-size: 1rem;
   }
 }
