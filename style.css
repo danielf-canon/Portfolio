@@ -328,7 +328,10 @@ section .skills .skill .placeholder li {
   display: grid;
   place-content: center;
   text-align: center;
+  justify-content: center;
+  align-items: center;
   gap: 3rem;
+  margin: 5rem 1rem;
 }
 
 #about-me {
@@ -336,11 +339,24 @@ section .skills .skill .placeholder li {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 3.125rem;
-  margin-top: 3.125rem;
   background-image: url(images/header-illsutration-mobile@2x.png);
   background-repeat: no-repeat;
   background-size: cover, auto;
+}
+
+#about-me-title {
+  padding: 0%;
+  margin: 0%;
+}
+
+#about-me-button {
+  display: flex;
+  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3%;
+  margin: 0 auto;
 }
 
 .skills {
@@ -413,7 +429,7 @@ textarea {
   background: hsl(0, 0%, 100%);
   border: 1px solid #d0d9d4;
   border-radius: 4px;
-  padding: 4%;
+  padding: 3%;
   box-sizing: border-box;
 }
 
@@ -427,7 +443,7 @@ input {
   background: hsl(0, 0%, 100%);
   border: 1px solid #d0d9d4;
   border-radius: 4px;
-  padding: 4%;
+  padding: 3%;
   width: 100%;
   box-sizing: border-box;
 }
@@ -457,6 +473,8 @@ textarea:hover::placeholder {
 #First-name { display: none; }
 
 #Last-name { display: none; }
+
+.dekstop { display: none; }
 
 @media (min-width: 768px) {
   .container {
@@ -538,20 +556,43 @@ textarea:hover::placeholder {
   }
 
   #about-me {
-    background-image: url(images/illustration\ about\ me\ desktop.jpg);
-    background-repeat: no-repeat;
-    background-size: cover, auto;
-    background-position: center center;
+    background-image: none;
+    gap: 2rem;
+  }
+
+  #background-about {
+    width: 115%;
+    margin: 5rem;
+    padding-left: 0%;
+    padding-right: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
   }
 
   #about-me-button {
     display: flex;
     flex-direction: row;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 2%;
+    padding: 14px;
     margin: 0 auto;
+  }
+
+  .about-me-text {
+    width: 780px;
+    padding: 0%;
+    margin: 0%;
+  }
+
+  #about-img-1 {
+    max-width: 150px;
+    float: right;
+  }
+
+  #about-img-2 {
+    max-width: 150px;
+    float: left;
+    left: -10px;
   }
 
   .skills {
@@ -564,19 +605,23 @@ textarea:hover::placeholder {
   #contact-form {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: center;
     margin-top: 5%;
     padding-left: 0.938rem;
     padding-right: 0.938rem;
     margin-left: auto;
     margin-right: auto;
+    max-width: 1080px;
   }
 
   #contact-form-title {
     display: flex;
     width: 40%;
-    padding-left: 10%;
-    padding-bottom: 0%;
+    padding: 0%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    font-size: 1.75rem;
   }
 
   .form {
@@ -584,6 +629,11 @@ textarea:hover::placeholder {
     height: auto;
     width: 80%;
     padding-right: 10%;
+  }
+
+  .form .button {
+    margin-left: 0%;
+    margin-right: auto;
   }
 
   #First-name {
@@ -604,7 +654,34 @@ textarea:hover::placeholder {
     gap: 2px;
   }
 
-  #name { display: none; }
-
   .arrow { display: block; }
+
+  #mail-form { display: none; }
+
+  .bg {
+    margin-bottom: 5rem;
+    display: block;
+  }
+
+  #backgound-img-1 {
+    display: block;
+    width: 150px;
+    float: left;
+  }
+
+  #backgound-img-2 {
+    display: block;
+    width: 150px;
+    float: right;
+  }
+
+  footer .logos { margin: 1rem 11rem; }
+
+  hr { border: 0.5px #d0d9d4bd solid; }
+
+  .dekstop {
+    display: inline;
+  }
+
+
 }
