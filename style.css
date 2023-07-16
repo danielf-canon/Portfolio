@@ -585,11 +585,13 @@ textarea:hover::placeholder {
   }
 
   #about-img-1 {
+    display: inline;
     max-width: 150px;
     float: right;
   }
 
   #about-img-2 {
+    display: inline;
     max-width: 150px;
     float: left;
     left: -10px;
@@ -664,13 +666,13 @@ textarea:hover::placeholder {
   }
 
   #backgound-img-1 {
-    display: block;
+    display: inline;
     width: 150px;
     float: left;
   }
 
   #backgound-img-2 {
-    display: block;
+    display: inline;
     width: 150px;
     float: right;
   }
