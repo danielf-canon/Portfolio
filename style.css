@@ -342,6 +342,7 @@ section .skills .skill .placeholder li {
   background-image: url(images/header-illsutration-mobile@2x.png);
   background-repeat: no-repeat;
   background-size: cover, auto;
+  padding: 5%;
 }
 
 #about-me-title {
