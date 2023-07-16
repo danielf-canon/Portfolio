@@ -100,8 +100,6 @@ I would like to thank every persone that encourge me to start this journey
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 ## 📝 License <a name="license"></a>
 
 MIT License
