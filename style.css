@@ -557,13 +557,19 @@ textarea:hover::placeholder {
   }
 
   #about-me {
-    background-image: none;
+    background-image: url(images/illustration-about\ me-1-desktop@2x.png);
+    background-repeat: no-repeat;
+    background-size: 175px;
+    background-position: 100% 10%;
     gap: 2rem;
-    padding: 5%;
-    padding-left: 15%;
+    padding: 15%;
   }
 
   #background-about {
+    background-image: url(images/illustration-about-me-2-desktop@2x.png);
+    background-repeat: no-repeat;
+    background-size: 175px;
+    background-position: 0% 80%;
     width: 100%;
     margin: 5rem;
     padding-left: 0%;
@@ -613,19 +619,22 @@ textarea:hover::placeholder {
     align-items: center;
     justify-content: center;
     margin-top: 5%;
-    padding-left: 0.938rem;
-    padding-right: 0.938rem;
+    padding: 10rem;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1024px;
+    max-width: 1280px;
+    background-image: url(images/Frame@2x.png), url(images/Frame@2x-1.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 175px, 175px;
+    background-position: 100% 90%, 0% 70%;
   }
 
   #contact-form-title {
     display: flex;
     width: 40%;
-    padding: 0%;
+    padding-left: 0%;
     padding-bottom: 10%;
-    padding-left: 5%;
+    padding-right: 0%;
     font-size: 1.75rem;
   }
 
