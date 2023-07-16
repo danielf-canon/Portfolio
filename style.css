@@ -96,6 +96,10 @@ a {
   gap: 0.4rem;
 }
 
+.arrow {
+  display: none;
+}
+
 @media (max-width: 768px) {
   nav {
     display: flex;
@@ -205,6 +209,7 @@ h3 {
   font-size: 1.5rem;
   font-weight: 600;
   color: #344563;
+  margin: 0%;
 }
 
 .indicator {
@@ -236,6 +241,7 @@ h3 {
   border: 1px #d0d9d4 solid;
   border-radius: 8px;
   margin: 0%;
+  gap: 1rem;
 }
 
 .project-img {
@@ -544,7 +550,7 @@ textarea:hover::placeholder {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 4%;
+    padding: 2%;
     margin: 0 auto;
   }
 
@@ -599,4 +605,6 @@ textarea:hover::placeholder {
   }
 
   #name { display: none; }
+
+  .arrow { display: block; }
 }
