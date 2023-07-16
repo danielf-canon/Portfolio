@@ -106,7 +106,7 @@ a {
     justify-content: flex-end;
     max-width: border-box;
   }
-  
+
   .burgerButton.active {
     position: fixed;
     z-index: 3;
@@ -682,6 +682,4 @@ textarea:hover::placeholder {
   .dekstop {
     display: inline;
   }
-
-
 }
