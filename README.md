@@ -1,4 +1,4 @@
-<a name="readme-top"></a>
+`<a name="readme-top"></a>`
 
 # 📗 Table of Contents
 
@@ -15,21 +15,21 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - 📝[License)](#license)
 
-# 📖 [Portfolio] <a name="about-project"></a>
+# 📖 [Portfolio] `<a name="about-project"></a>`
 
-*[Portfolio]* 
+*[Portfolio]*
 
 **[Portfolio]** is my first portfolio project.
 
-## 🛠 Built With <a name="built-with"></a>
+## 🛠 Built With `<a name="built-with"></a>`
 
-### Tech Stack <a name="tech-stack"></a>
+### Tech Stack `<a name="tech-stack"></a>`
 
 > Github, Git, CSS, HTML, Linters, Nodejs.
 
 - *[Portfolio ]*
 
-### Key Features <a name="key-features"></a>
+### Key Features `<a name="key-features"></a>`
 
 > Describe between 1-3 key features of the application.
 
@@ -38,14 +38,13 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+## 🚀 Live Demo `<a name="live-demo"></a>`
 
-## 🚀 Live Demo <a name="live-demo"></a>
-
-- [Live Demo Link](https://github.com/danielf-canon/Portfolio.git)
+* [Personal Portfolio Demo Link](https://danielf-canon.github.io/Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 💻 Getting Started <a name="getting-started"></a>
+## 💻 Getting Started `<a name="getting-started"></a>`
 
 To get a local copy up and running, follow these steps.
 
@@ -75,7 +74,7 @@ run the server from the live-server extinction
 
 to see this project visit this [link](https://danielf-canon.github.io/Portfolio/)
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Authors `<a name="authors"></a>`
 
 Daniel Felipe Cañón
 
@@ -83,13 +82,13 @@ Daniel Felipe Cañón
 - GitHub: [@githubhandle](https://github.com/danielf-canon)
 - LinkedIn: [LinkedIn](https://linkedin.com/in/daniel-felipe-canon-sanchez)
 
-## 🔭 Future Features <a name="future-features"></a>
+## 🔭 Future Features `<a name="future-features"></a>`
 
 - *add som interactivity to the website*
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🤝 Contributing <a name="contributing"></a>
+## 🤝 Contributing `<a name="contributing"></a>`
 
 Contributions, issues, and feature requests are welcome!
 
@@ -97,14 +96,14 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## ⭐️ Show your support <a name="support"></a>
+## ⭐️ Show your support `<a name="support"></a>`
 
 thanks for visit my first portfolio.
 Thank you for supporting me in this
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
+## 🙏 Acknowledgments `<a name="acknowledgements"></a>`
 
 I would like to thank every persone that encourge me to start this journey
 
