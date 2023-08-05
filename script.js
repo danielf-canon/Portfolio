@@ -299,8 +299,6 @@ document.addEventListener('DOMContentLoaded', () => {
     ((index) => {
       projectButtons[index].addEventListener('click', () => {
         createPopup(index);
-        const popupWindow = document.getElementsByClassName('popup-section')[index];
-        popupWindow.style.display = 'flex';
       });
     })(i);
   }
