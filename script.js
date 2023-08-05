@@ -279,8 +279,8 @@ function createPopup(index) {
   document.body.appendChild(popupWindow);
 
   popupCloseButton.addEventListener('click', () => {
-    popupWindow.style.display = 'none';
     overlay.style.display = 'none';
+    popupWindow.style.display = 'none';
   });
 
   popupLiveLink.addEventListener('click', () => {
