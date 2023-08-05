@@ -6,10 +6,6 @@ body {
   height: auto;
 }
 
-.desktop {
-  display: none;
-}
-
 .fadeInAnimation {
   opacity: 1;
   animation-name: fadein;
@@ -538,6 +534,10 @@ textarea:hover::placeholder {
 
 #Last-name { display: none; }
 
+.desktop {
+  display: none;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -617,8 +617,17 @@ textarea:hover::placeholder {
     justify-content: space-between;
   }
 
+  .title-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
   .popup-buttons {
-    justify-content: start;
+    width: 40%;
+    float: right;
+    display: inline;
+    position: relative;
+    justify-content: end;
     align-items: flex-start;
     margin: 0%;
   }
@@ -629,7 +638,8 @@ textarea:hover::placeholder {
   }
 
   .popup-title {
-    font-size: 2rem;
+    font-size: 1.6rem;
+    width: 50%;
   }
 
   .close-button {

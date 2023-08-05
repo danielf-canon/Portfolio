@@ -215,10 +215,37 @@ function createPopup(index) {
   popupImageMob.classList.add('mobile', 'popup-image');
   popupWindow.appendChild(popupImageMob);
 
+  const popupTitleButtonsContainer = document.createElement('div');
+  popupTitleButtonsContainer.classList.add('title-buttons');
+  popupWindow.appendChild(popupTitleButtonsContainer);
+
   const popupTitle = document.createElement('h3');
   popupTitle.classList.add('popup-title');
   popupTitle.innerHTML = project.popupTitle;
-  popupWindow.appendChild(popupTitle);
+  popupTitleButtonsContainer.appendChild(popupTitle);
+
+  const popupButtonsContainerDesktop = document.createElement('div');
+  popupButtonsContainerDesktop.classList.add('desktop', 'popup-buttons');
+  popupTitleButtonsContainer.appendChild(popupButtonsContainerDesktop);
+
+  const popupLiveLinkDesk = document.createElement('button');
+  popupLiveLinkDesk.classList.add('button');
+  popupLiveLinkDesk.innerHTML = 'See Live';
+  popupButtonsContainerDesktop.appendChild(popupLiveLinkDesk);
+
+  const popupLiveLinkIconDesk = document.createElement('img');
+  popupLiveLinkIconDesk.setAttribute('src', 'images/see-live-icon.png');
+  popupLiveLinkDesk.appendChild(popupLiveLinkIconDesk);
+
+  const popupSourceLinkDesk = document.createElement('button');
+  popupSourceLinkDesk.classList.add('button');
+  popupSourceLinkDesk.innerHTML = 'See Source';
+  popupButtonsContainerDesktop.appendChild(popupSourceLinkDesk);
+
+  const popupSourceLinkIconDesk = document.createElement('img');
+  popupSourceLinkIconDesk.setAttribute('src', 'images/See-source.png');
+  popupSourceLinkIconDesk.setAttribute('alt', 'Source Link Icon');
+  popupSourceLinkDesk.appendChild(popupSourceLinkIconDesk);
 
   const popupTagsMob = document.createElement('ul');
   popupTagsMob.classList.add('popup-items', 'mobile');
@@ -244,27 +271,23 @@ function createPopup(index) {
   popupDescription.innerHTML = project.description;
   popupWindow.appendChild(popupDescription);
 
-  const popupButtonsContainer = document.createElement('div');
-  popupButtonsContainer.classList.add('popup-buttons');
-  popupWindow.appendChild(popupButtonsContainer);
+  const popupButtonsContainerMobile = document.createElement('div');
+  popupButtonsContainerMobile.classList.add('popup-buttons', 'mobile');
+  popupWindow.appendChild(popupButtonsContainerMobile);
 
   const popupLiveLink = document.createElement('button');
-  popupLiveLink.setAttribute('id', 'popup__live__link__button');
-  popupLiveLink.setAttribute('type', 'button');
   popupLiveLink.classList.add('button');
   popupLiveLink.innerHTML = 'See Live';
-  popupButtonsContainer.appendChild(popupLiveLink);
+  popupButtonsContainerMobile.appendChild(popupLiveLink);
 
   const popupLiveLinkIcon = document.createElement('img');
   popupLiveLinkIcon.setAttribute('src', 'images/see-live-icon.png');
-  popupLiveLinkIcon.setAttribute('alt', 'Live Link Icon');
   popupLiveLink.appendChild(popupLiveLinkIcon);
 
   const popupSourceLink = document.createElement('button');
-  popupSourceLink.setAttribute('id', 'popup__source__link__button');
   popupSourceLink.classList.add('button');
   popupSourceLink.innerHTML = 'See Source';
-  popupButtonsContainer.appendChild(popupSourceLink);
+  popupButtonsContainerMobile.appendChild(popupSourceLink);
 
   const popupSourceLinkIcon = document.createElement('img');
   popupSourceLinkIcon.setAttribute(
@@ -303,3 +326,15 @@ document.addEventListener('DOMContentLoaded', () => {
     })(i);
   }
 });
+/*
+function validationForm() {
+  const email = document.querySelector('#mail');
+  const lowEmail = email.toLowerCase();
+
+  if (email === lowEmail) {
+    return true
+  }else {
+    alert()
+  }
+}
+*/
