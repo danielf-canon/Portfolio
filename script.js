@@ -300,7 +300,7 @@ document.addEventListener('DOMContentLoaded', () => {
       projectButtons[index].addEventListener('click', () => {
         createPopup(index);
         const popupWindow = document.getElementsByClassName('popup-section')[index];
-        popupWindow.style.flex = 'auto';
+        popupWindow.style.display = 'flex';
       });
     })(i);
   }
