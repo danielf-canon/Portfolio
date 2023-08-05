@@ -6,6 +6,10 @@ body {
   height: auto;
 }
 
+.desktop {
+  display: none;
+}
+
 .fadeInAnimation {
   opacity: 1;
   animation-name: fadein;
@@ -258,27 +262,40 @@ ul {
 }
 
 .popup-section {
-  display: none;
-  top: 0;
-  left: 0;
-  right: 0;
-  flex-flow: column;
-  width: 80%;
-  margin: 5% auto;
+  scrollbar-gutter: stable;
+  display: flex;
+  position: fixed;
+  box-sizing: border-box;
+  flex-direction: column;
+  overflow-y: scroll;
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  width: 90%;
+  height: 95vh;
+  transform: translate(-50%, -50%);
+  margin: auto;
   padding: 1rem;
-  gap: 1rem;
-  padding-bottom: 5%;
-  background-color: #c2c8d1;
+  gap: 0.5rem;
+  background-color: hsl(0, 0%, 100%);
   border: 1px #ebecf0 solid;
   border-radius: 8px;
 }
 
 .close-button {
-  font-size: 1.5rem;
-  padding: 6px 12px;
-  margin-right: 0;
-  border: 1px #d0d9d4 solid;
-  border-radius: 8px;
+  font-size: 1rem;
+  display: inline;
+  align-self: flex-end;
+  justify-self: end;
+  color: hsl(0, 0%, 100%);
+  margin: 0%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  position: absolute;
+  border: 1px;
+  border-radius: 4px;
+  background-color: transparent;
 }
 
 .popup-image {
@@ -287,15 +304,9 @@ ul {
   border-radius: 14px;
 }
 
-.popup-div {
-  display: flex;
-  margin-left: 0;
-  margin-right: 0;
-  gap: 2%;
-}
-
 .popup-title {
   text-align: left;
+  font-size: 1.8rem;
   justify-content: start;
   align-self: start;
   width: 70%;
@@ -309,29 +320,27 @@ ul {
 }
 
 .popup-text {
+  font-size: 1rem;
   text-align: start;
   justify-content: start;
   align-self: start;
   margin: 0;
 }
 
-#see-live {
+.popup-buttons {
   display: flex;
-  flex-flow: row;
-  justify-content: flex-end;
-  gap: 0.5rem;
-  margin: 0;
-  padding: 2%;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
-#source {
-  display: flex;
-  flex-flow: row;
-  justify-content: flex-end;
-  align-self: flex-end;
-  gap: 0.5rem;
-  margin: 0;
-  padding: 2%;
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 30%);
+  backdrop-filter: blur(5px);
 }
 
 section .skills .skill .placeholder ul {
@@ -383,15 +392,16 @@ section .skills .skill .placeholder li {
   justify-content: center;
   align-self: center;
   text-align: center;
-  margin: 3%;
+  margin: 2% 0;
   font-size: 1.063rem;
   font-weight: 500;
   background-color: #36b37f;
   color: hsl(0, 0%, 100%);
   border-radius: 4px;
   border: 4px;
-  padding: 4%;
+  padding: 12px 8px;
   transition-duration: 0.4s ease;
+  gap: 0.4rem;
 }
 
 #about {
@@ -607,99 +617,49 @@ textarea:hover::placeholder {
     justify-content: space-between;
   }
 
+  .popup-buttons {
+    justify-content: start;
+    align-items: flex-start;
+    margin: 0%;
+  }
+
   .popup-section {
-    display: none;
-    position: fixed;
-    flex-flow: column;
-    width: 60%;
-    height: auto;
-    max-width: 100%;
-    margin: 5% auto;
-    padding: 1rem;
-    gap: 1rem;
-    padding-bottom: 5%;
-    background-color: #c2c8d1;
-    border: 1px #ebecf0 solid;
-    border-radius: 8px;
-    box-sizing: border-box;
-  }
-
-  .close-button {
-    padding: 3px 8px;
-    margin-right: 0;
-    border: 1px #d0d9d4 solid;
-    border-radius: 8px;
-  }
-
-  .popup-image {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-    max-height: 100%;
-    border-radius: 14px;
-  }
-
-  .popup-div {
-    display: flex;
-    margin-left: 0;
-    margin-right: 0;
-    gap: 2%;
+    width: 65vw;
+    gap: 0.4rem;
   }
 
   .popup-title {
-    text-align: left;
-    justify-content: start;
-    align-self: start;
-    width: 70%;
-    margin: 0;
+    font-size: 2rem;
   }
 
-  .popup-items {
-    margin: 0;
-    align-self: start;
-    gap: 1rem;
-  }
-
-  .popup-text {
-    text-align: start;
-    justify-content: start;
-    align-self: start;
-    margin: 0;
-  }
-
-  #see-live {
-    display: flex;
-    flex-flow: row;
-    justify-content: flex-end;
-    gap: 0.5rem;
-    margin: 0;
-    padding: 2%;
-  }
-
-  #source {
-    display: flex;
-    flex-flow: row;
-    justify-content: flex-end;
-    align-self: flex-end;
-    gap: 0.5rem;
-    margin: 0;
-    padding: 2%;
+  .close-button {
+    color: #3a4a42;
+    background-color: #ebecf0;
+    position: relative;
   }
 
   #about-me {
-    background-image: url(images/illustration\ about\ me\ desktop.jpg);
-    background-repeat: no-repeat;
-    background-size: cover, auto;
-    background-position: center center;
-  }
-
-  #about-me-button {
     display: flex;
-    flex-direction: row;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 4%;
+    margin-top: 5%;
+    padding: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: none;
+  }
+
+  #background-about {
+    max-width: 1280px;
+    background-image: url(images/illustration-about-me-2-desktop@2x.png), url(images/Frame.png);
+    background-repeat: no-repeat, no-repeat;
+    background-size: 175px, 175px;
+    background-position: 0% 70%, 100% 40%;
+  }
+
+  #about-me-button {
+    padding: 2%;
     margin: 0 auto;
   }
 
@@ -753,5 +713,11 @@ textarea:hover::placeholder {
     gap: 2px;
   }
 
-  #name { display: none; }
+  .desktop {
+    display: flex;
+  }
+
+  .mobile {
+    display: none;
+  }
 }
