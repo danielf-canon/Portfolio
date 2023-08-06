@@ -1,5 +1,3 @@
-/* eslint-disable no-plusplus */
-/* eslint-disable max-len */
 const hamburger = document.querySelector('.burgerButton');
 const navMenu = document.querySelector('.nav-menu');
 
@@ -158,7 +156,7 @@ const projects = [
 
 ];
 
-for (let i = 0; i < projects.length; i++) {
+for (let i = 0; i < projects.length; i += 1) {
   const project = document.createElement('article');
   project.classList.add('project');
   x.appendChild(project);
@@ -173,7 +171,7 @@ for (let i = 0; i < projects.length; i++) {
   project.appendChild(title);
 
   const languages = document.createElement('ul');
-  for (let j = 0; j < projects[i].languages.length; j++) {
+  for (let j = 0; j < projects[i].languages.length; j += 1) {
     const language = document.createElement('li');
     language.innerHTML = projects[i].languages[j];
     languages.appendChild(language);
@@ -330,8 +328,9 @@ document.addEventListener('DOMContentLoaded', () => {
 const form = document.getElementById('form');
 
 function invalidMessage() {
-  // eslint-disable-next-line no-alert
-  window.alert('please, use only lowercase');
+  const error = document.createElement('small');
+  error.innerText = 'Please, use lowercase for your email.';
+  form.appendChild(error);
 }
 
 form.addEventListener('submit', (event) => {

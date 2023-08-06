@@ -400,6 +400,10 @@ section .skills .skill .placeholder li {
   gap: 0.8rem;
 }
 
+small {
+  animation: fadeIn 5s;
+}
+
 #about {
   display: grid;
   place-content: center;
