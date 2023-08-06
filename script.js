@@ -326,3 +326,25 @@ document.addEventListener('DOMContentLoaded', () => {
     })(i);
   }
 });
+
+const form = document.getElementById('form');
+
+function invalidMessage() {
+  // eslint-disable-next-line no-alert
+  window.alert('please, use only lowercase');
+}
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault();
+  const FormEmail = form.elements['mail-user'];
+  let validation = false;
+  if (FormEmail.value === FormEmail.value.toLowerCase()) {
+    validation = true;
+  }
+  if (validation) {
+    form.submit();
+    form.reset();
+  } else {
+    invalidMessage();
+  }
+});
