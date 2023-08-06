@@ -347,3 +347,32 @@ form.addEventListener('submit', (event) => {
     invalidMessage();
   }
 });
+
+const formStore = document.querySelector('#contact-me-form');
+const nameInput = document.querySelector('#name');
+const msgInput = document.querySelector('#msg');
+const emailInput = document.querySelector('#mail');
+
+let formData = {
+  userName: localStorage.getItem('formData.userName'),
+  userEmail: localStorage.getItem('formData.userEmail'),
+  textMsg: localStorage.getItem('formData.textMsg'),
+};
+
+formData = JSON.parse(localStorage.getItem('formData'));
+
+if (formData) {
+  nameInput.value = formData.userName;
+  emailInput.value = formData.userEmail;
+  msgInput.value = formData.textMsg;
+}
+
+function saveData() {
+  formData = {
+    userName: nameInput.value,
+    userEmail: emailInput.value,
+    textMsg: msgInput.value,
+  };
+  localStorage.setItem('formData', JSON.stringify(formData));
+}
+formStore.addEventListener('change', saveData);
