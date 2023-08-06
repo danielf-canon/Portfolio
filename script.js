@@ -326,17 +326,3 @@ document.addEventListener('DOMContentLoaded', () => {
     })(i);
   }
 });
-
-function validationForm() {
-  const email = document.querySelector('#mail');
-  const lowEmail = email.toLowerCase();
-
-  let output = false;
-  if (email === lowEmail) {
-    output = true;
-  } else {
-    // eslint-disable-next-line no-alert
-    alert('Please only use lowercase');
-  }
-  return output;
-}
