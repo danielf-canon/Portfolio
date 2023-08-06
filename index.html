@@ -65,6 +65,7 @@
       <h2 class="titlesClass">My Recent Works</h2>
       <div class="indicator"></div>
       <div class="works">
+<!-- 
         <article class="project">
           <img src="" alt="Project image" class="project-img">
           <h3 class="project-title">Multi-Post Stories Gain+Glory</h3>
@@ -131,8 +132,26 @@
           </ul>
           <button class="button"> See project </button>
         </article>
-        
       </div>
+      <div class="popup-section">
+          <button class="close-button">&times;</button>
+        <img src="images/Snapshoot Portfolio.jpg" alt="popup_image" class="popup-image">
+        <div class="popup-div">
+          <h3 class="popup-title">Keeping track of hundreds of components</h3>
+          <button class="button" id="see-live">See live</button>
+          <button class="button" id="source">See source</button>
+        </div>
+        <ul class="popup-items">
+          <li class="popup-item">Codekit</li>
+          <li class="popup-item">GitHub</li>
+          <li class="popup-item">JavaScript</li>
+          <li class="popup-item">Bootstrap</li>
+          <li class="popup-item">Terminal</li>
+          <li class="popup-item">Codepen</li>
+        </ul>
+        <p class="popup-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
+      </div>
+      -->
     </section>
     
     <section id="about">
@@ -198,16 +217,12 @@
   
     <section id="contact-form">
       <h2 class="titlesClass" id="contact-form-title">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h2>
-      <div class="container">
-        <form action="https://formspree.io/f/xyyavypr" class="form" method="post">
-            <div class="name-complete">
-              <input type="text" id="First-name" placeholder="First name" maxlength="30" required>
-              <input type="text" id="Last-name" placeholder="Last name" maxlength="30" required>
-            </div>
+      <div class="container" id="contact-form-container">
+        <form action="https://formspree.io/f/xyyavypr" class="form" method="post" id="form" >
               <input type="text" id="name" placeholder="Full name" maxlength="30" required>
-              <input type="email" id="mail" placeholder="Email address" required rows="5">
+              <input type="email" id="mail-user" placeholder="Email address" required rows="5">
               <textarea name="user_message" id="msg" placeholder="Hey I'd like to connect to..." maxlength="500" required></textarea>
-          <button class="button" id = "button-form"type="submit">Get in touch</button>
+          <button class="button" id = "button-form" type="submit" >Get in touch</button>
         </form>
       </div>
   
