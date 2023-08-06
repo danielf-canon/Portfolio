@@ -302,8 +302,8 @@ function createPopup(index) {
   document.body.appendChild(popupWindow);
 
   popupCloseButton.addEventListener('click', () => {
-    overlay.style.display = 'none';
-    popupWindow.style.display = 'none';
+    overlay.remove();
+    popupWindow.remove();
   });
 
   popupLiveLink.addEventListener('click', () => {
@@ -326,15 +326,17 @@ document.addEventListener('DOMContentLoaded', () => {
     })(i);
   }
 });
-/*
+
 function validationForm() {
   const email = document.querySelector('#mail');
   const lowEmail = email.toLowerCase();
 
+  let output = false;
   if (email === lowEmail) {
-    return true
-  }else {
-    alert()
+    output = true;
+  } else {
+    // eslint-disable-next-line no-alert
+    alert('Please only use lowercase');
   }
+  return output;
 }
-*/
